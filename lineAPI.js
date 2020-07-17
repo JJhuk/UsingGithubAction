@@ -1,8 +1,9 @@
-import fs from 'fs';
+/*import fs from 'fs';
 
 const errorMessage = fs.readFile('errorLog.txt','utf-8', function(err,data){
     console.log(data);
 })
+*/
 
 const request = require('request')
 
@@ -15,7 +16,7 @@ request.post({
         'Authorization': `Bearer ${TOKEN}`
     },
     form: {
-        message: `안녕하세요 내용은${errorMessage} 입니다.`,
+        message: `안녕하세요 내용은 입니다.`,
     }
 }, (error, response,body) => {
     console.log(body);
