@@ -1,11 +1,10 @@
 /*import fs from 'fs';
-
 const errorMessage = fs.readFile('errorLog.txt','utf-8', function(err,data){
     console.log(data);
 })
 */
 
-const request = require('request')
+import request from 'requset';
 
 const TARGET_URL='https://notify-api.line.me/api/notify'
 const TOKEN = '7AxVSvUUOsFki4Lo7y3wRpzYyUyJTnODpPr4973cLOr'

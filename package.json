@@ -1,0 +1,8 @@
+{
+  "name": "UsingGithubAction",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "requset": "0.0.1-security"
+  }
+}
