@@ -36,7 +36,8 @@ jobs:
 
     - name: Check failure
       if: ${{ failure() }}
-      run: node lineAPI.js
+      run: |
+        crul -X POST -H "Authorization: Bearer ${{7AxVSvUUOsFki4Lo7y3wRpzYyUyJTnODpPr4973cLOr}}" -F message="Deployed spine static metadata${{$STEPS_CONTEXT}}" https://notify-api.line.me/api/notify
 
     - name: reRun helloweb.js
       run: node helloweb.js

@@ -1,3 +1,4 @@
+/*
 import fs from 'fs';
 
 const str = [];
@@ -13,4 +14,8 @@ fs.writeFile('errorLog.txt',str,function(err) {
         console.log('err');
     }
 })
+*/
 
+console.log("hhhh");
+
+throw('hhh');
