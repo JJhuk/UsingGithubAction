@@ -26,18 +26,17 @@ jobs:
     - name: run helloweb.js
       id: hello
       run: node helloweb.js
-      continue-on-error: true
+      #continue-on-error: true
 
     - name: Dump steps context
       env:
         STEPS_CONTEXT: ${{ toJson(steps) }}
       run: echo "$STEPS_CONTEXT"
 
-    - name: Check on failures
-      if: steps.hello.outcome == 'failure'
-      run: echo Check Fail!!
+    - name: Check failure
+      if: ${{ failure() }}
+      run: echo fail!!
 
     - name: Check on failures
-      if: steps.hello.outcome == 'success'
       run: echo Check success!!
     
