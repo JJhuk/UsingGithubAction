@@ -34,9 +34,10 @@ jobs:
       run: echo "$STEPS_CONTEXT"
 
     - name: Check on failures
-      if: steps.hello.outcome == "failure"
+      if: steps.hello.outcome == 'failure'
       run: echo Check Fail!!
-    - name: Ceck on success
-      if: steps.hello.outcome == "success"
-      run: echo Check True!!
+
+    - name: Check on failures
+      if: steps.hello.outcome == 'success'
+      run: echo Check success!!
     
