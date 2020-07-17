@@ -10,8 +10,8 @@ request.post({
     },
     form: {
         message: '안녕하세요. Line Notify 테스트입니다.',
-        stickerId: 2,
-        StickerPackageId: 100
+        stickerId: 52114110,
+        StickerPackageId: 11539
 
     }
 }, (error, response,body) => {
