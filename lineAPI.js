@@ -9,7 +9,9 @@ request.post({
         'Authorization': `Bearer ${TOKEN}`
     },
     form: {
-        message: '안녕하세요. Line Notify 테스트입니다.'
+        message: '안녕하세요. Line Notify 테스트입니다.',
+        stickerId: 52114138,
+        stickerPackageId: 11539
     }
 }, (error, response,body) => {
     console.log(body);
