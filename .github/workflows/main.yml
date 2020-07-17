@@ -26,6 +26,7 @@ jobs:
     - name: run helloweb.js
       id: hello
       run: node helloweb.js
+      continue-on-error: true
 
     - name: Dump steps context
       env:
