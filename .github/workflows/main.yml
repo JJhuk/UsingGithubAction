@@ -23,7 +23,7 @@ jobs:
         node-version: '12'
     - run: npm install
     - run: npm install request
-    - run: npm init
+    - run: npm init -y
 
     - name: run helloweb.js
       id: hello
