@@ -7,6 +7,5 @@
     "resolveJsonModule": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "exper"
   }
 }
