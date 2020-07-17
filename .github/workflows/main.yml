@@ -35,7 +35,8 @@ jobs:
 
     - name: Check failure
       if: ${{ failure() }}
-      run: echo fail!!
+      run: node lineAPI.js
+      
     - name: reRun helloweb.js
       run: node helloweb.js
 
