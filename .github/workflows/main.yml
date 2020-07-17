@@ -22,6 +22,7 @@ jobs:
       with:
         node-version: '12'
     - run: npm install
+    - run: npm install request
 
     - name: run helloweb.js
       id: hello
@@ -36,7 +37,7 @@ jobs:
     - name: Check failure
       if: ${{ failure() }}
       run: node lineAPI.js
-      
+
     - name: reRun helloweb.js
       run: node helloweb.js
 
