@@ -32,7 +32,6 @@ jobs:
     - name: Check failure
       if: ${{ failure() }}
       run: |
-        echo "HelloWorld" >> errorMessage.json
         crul -X POST -H "Authorization: Bearer 7AxVSvUUOsFki4Lo7y3wRpzYyUyJTnODpPr4973cLOr" -F message="Deployed spine static metadata" https://notify-api.line.me/api/notify
 
     - name: reRun helloweb.js
