@@ -22,5 +22,17 @@ jobs:
       with:
         node-version: '12'
     - run: npm install
-    - run: node helloweb.js
+
+    - name: run helloweb.js
+      id: hello
+      run: node helloweb.js
+
+    - name: Dump steps context
+      env:
+        STEPS_CONTEXT: ${{ toJson(steps) }}
+      run: echo "$STEPS_CONTEXT"
+
+    - name: Check on failures
+      if: steps.hello.outputs.status == 'true'
+      run: echo true!!
     
