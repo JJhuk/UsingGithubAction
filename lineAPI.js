@@ -1,3 +1,9 @@
+import fs from 'fs';
+
+const errorMessage = fs.readFile('errorLog.txt','utf-8', function(err,data){
+    console.log(data);
+})
+
 const request = require('request')
 
 const TARGET_URL='https://notify-api.line.me/api/notify'
@@ -9,9 +15,7 @@ request.post({
         'Authorization': `Bearer ${TOKEN}`
     },
     form: {
-        message: '안녕하세요. Line Notify 테스트입니다.',
-        packageId: 52114110,
-        stickerId: 11539
+        message: `안녕하세요 내용은${errorMessage} 입니다.`,
     }
 }, (error, response,body) => {
     console.log(body);
