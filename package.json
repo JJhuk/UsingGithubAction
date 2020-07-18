@@ -7,5 +7,5 @@
   "devDependencies": {
     "request": "^2.88.2"
   },
-  "module": "node_modules"
+  "type": "module"
 }
