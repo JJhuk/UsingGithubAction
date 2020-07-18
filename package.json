@@ -1,9 +1,13 @@
 {
   "name": "UsingGithubAction",
   "version": "1.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
   "devDependencies": {
     "request": "^2.88.2",
     "requset": "0.0.1-security"
-  }
+  },
+  "type": "module",
+  "module": "node_modules"
 }
