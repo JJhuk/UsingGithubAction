@@ -5,9 +5,7 @@
     "axios": "^0.19.2"
   },
   "devDependencies": {
-    "request": "^2.88.2",
-    "requset": "0.0.1-security"
+    "request": "^2.88.2"
   },
-  "type": "module",
   "module": "node_modules"
 }
