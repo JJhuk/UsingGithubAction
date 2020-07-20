@@ -1,2 +1,2 @@
-const message = 'Checking throw';
-throw(message);
+
+throw("Hello?");
